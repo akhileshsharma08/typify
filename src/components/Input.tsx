@@ -1,29 +1,29 @@
-import React from 'react'
-import '../App.css'
-import Todo from './Todo'
+import React from "react";
+import "../App.css";
 
-interface Props{
-    todo:string;
-    setTodo: React.Dispatch<React.SetStateAction<string
-    >>
+interface props {
+  todo: string;
+  setTodo: React.Dispatch<React.SetStateAction<string>>;
+  handleAdd: (e: React.FormEvent) => void;
 }
-
-
-const Input = ({todo,setTodo}:Props) => {
-    const HandleSubmit=(e:React.FormEvent)=>{
-        e.preventDefault()
-        console.log(todo)
-        }
+const Input:React.FC<props> = ({ todo, setTodo,handleAdd }) => {
+ 
   return (
     <div>
-        <form className='input' >
-        <input type="text" value={todo} onChange={(e)=>setTodo(e.target.value)} placeholder='Enter Your Task' className='myinput'/>
-        <button onClick={HandleSubmit} className=' mybtn' >Go</button>
-    
-        </form>
-        <Todo />
+      <form onSubmit={(e)=>{handleAdd(e)}} className="input">
+        <input
+          type="text"
+          value={todo}
+          onChange={(e) => setTodo(e.target.value)}
+          placeholder="Enter Your Task"
+          className="myinput"
+        />
+        <button  className=" mybtn">
+          Go
+        </button>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
