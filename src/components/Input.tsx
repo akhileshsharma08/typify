@@ -10,7 +10,7 @@ const Input:React.FC<props> = ({ todo, setTodo,handleAdd }) => {
  
   return (
     <div>
-      <form onSubmit={(e)=>{handleAdd(e)}} className="input">
+      <form onSubmit={(e)=>{handleAdd(e)}} className="input mb-4">
         <input
           type="text"
           value={todo}

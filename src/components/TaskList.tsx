@@ -9,8 +9,8 @@ interface props {
 
 const TaskList :React.FC<props> = ({todos,setTodos}) => {
     return (
-        <div className="todos ">
-            <div className="row d-flex justify-content-center align-items-center ">
+        <div className="todos d-flex container ">
+            <div className="row d-flex justify-content-start align-items-center  ">
                 
            
           {todos?.map((todo) => (

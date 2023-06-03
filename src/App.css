@@ -9,13 +9,14 @@ body,.App{
 
 .input{
     display: flex;
-    width: 90%;
+    width: 100%;
     position: relative;
     align-items: center;
+    justify-content: center;
 }
 .myinput{
     position: relative;
-    width: 100%;
+    width: 200%;
     /* color: rgb(27, 27, 236); */
     border-radius: 50px;
     border: none;
@@ -44,11 +45,10 @@ body,.App{
     transition: all 0.4s ease-in-out;
 }
 .mainbtnbox{
-
 background-color: #fff;
- 
     width: 100%;
     margin: 10px 20px;
+    border-radius: 10px;
 
 }
 ul>li{

@@ -38,8 +38,8 @@ const SingleTask: React.FC<{
       
         className={
           todo.isDone
-            ? "bg-danger mainbtnbox  bg px-2 col-md-10"
-            : "bg-white mainbtnbox bg px-2 col-md-10 "
+            ? "bg-danger mainbtnbox  bg px-2 ml-4 col-md-10"
+            : "bg-white mainbtnbox bg px-2 ml-4 col-md-11 "
         }
       >
 
